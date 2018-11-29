@@ -1,4 +1,4 @@
 # HaulMatic_PracticalTest
 # Sakila Dissanayake
 
-backend and dashboard include here
+backend and frontend include here.
