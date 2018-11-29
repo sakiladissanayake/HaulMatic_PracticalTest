@@ -1,0 +1,14 @@
+<mat-accordion multi="true" *ngIf="students.length > 0">
+  <mat-expansion-panel *ngFor="let student of students">
+    <mat-expansion-panel-header>
+      {{ student.id }}
+    </mat-expansion-panel-header>
+    <p>{{ student.name }}</p>
+    <p>{{ student.age }}</p>
+    <mat-action-row>
+      <button mat-button color="primary">EDIT</button>
+      <button mat-button color="warn">DELETE</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+</mat-accordion>
+<p class="info-text body-1" *ngIf="students.length <= 0">No students added yet!</p>

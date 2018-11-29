@@ -1,0 +1,22 @@
+<mat-card>
+  <form (submit)="onAddStudent(postForm)" #postForm="ngForm">
+      <mat-form-field>
+         <h2>Add Information</h2>
+        </mat-form-field>
+      <mat-form-field>
+          <input matInput type="text" name="id" ngModel required placeholder="Student Id" minlength="1" #title="ngModel" >
+          <mat-error *ngIf="id.invalid">Please enter a student id</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="text" name="name" ngModel required placeholder="Student Name" minlength="3" #title="ngModel" >
+          <mat-error *ngIf="name.invalid">Please enter a student name</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+          <input matInput type="text" name="age" ngModel required placeholder="Student Age" minlength="1" #title="ngModel" >
+          <mat-error *ngIf="age.invalid">Please enter a student age</mat-error>
+        </mat-form-field>
+        <button mat-raised-button color="accent" type="submit">Add Student</button>
+  </form>
+</mat-card>
+
+
